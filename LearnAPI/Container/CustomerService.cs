@@ -55,20 +55,76 @@ namespace LearnAPI.Container
             var _data = await this.context.TblCustomers.FindAsync(code);
             if (_data != null)
             {
-
                 _response = this.mapper.Map<TblCustomer, CustomerModal>(_data);
+               
             }
             return _response;
         }
 
-        public Task<APIResponse> Remove(string code)
+        public async Task<APIResponse> Remove(string code)
         {
-            throw new NotImplementedException();
+            APIResponse response = new APIResponse();
+            try
+            {
+                //TblCustomer _customer = this.mapper.Map<CustomerModal, TblCustomer>(customer);
+                //await this.context.TblCustomers.AddAsync(_customer);
+                //await this.context.SaveChangesAsync();
+                var _customer = await this.context.TblCustomers.FindAsync(code);
+                if(_customer != null)
+                {
+                    this.context.TblCustomers.Remove(_customer);
+                    await this.context.SaveChangesAsync();
+                    response.ResponseCode = 200;
+                    response.Result = code;
+                }
+                else
+                {
+                    response.ResponseCode = 404;
+                    response.ErrorMessage = "Data not found";
+                }
+               
+            }
+            catch (Exception ex)
+            {
+                response.ResponseCode = 400;
+                response.ErrorMessage = ex.Message;
+            }
+            return response;
         }
 
-        public Task<APIResponse> Update(CustomerModal customer, string code)
+        public async Task<APIResponse> Update(CustomerModal customer, string code)
         {
-            throw new NotImplementedException();
+            APIResponse response = new APIResponse();
+            try
+            {
+                
+                var _customer = await this.context.TblCustomers.FindAsync(code);
+                if (_customer != null)
+                {
+                    _customer.Name = customer.Name;
+                    _customer.Email = customer.Email;
+                    _customer.Phone = customer.Phone;
+                    _customer.IsActive = customer.IsActive;
+                    _customer.Creditlimit = customer.Creditlimit;
+                    await this.context.SaveChangesAsync();
+                    response.ResponseCode=200;
+                    response.Result = code;
+                    
+
+                }
+                else
+                {
+                    response.ResponseCode = 404;
+                    response.ErrorMessage = "Data not found";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                response.ResponseCode = 400;
+                response.ErrorMessage = ex.Message;
+            }
+            return response;
         }
     }
 }
