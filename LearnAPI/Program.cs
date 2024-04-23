@@ -1,4 +1,6 @@
+using AutoMapper;
 using LearnAPI.Container;
+using LearnAPI.Helper;
 using LearnAPI.Repos;
 using LearnAPI.Service;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +15,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<ICustomerService, CustomerService>();
 builder.Services.AddDbContext<LearndataContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("apicon")));
+
+//var automapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperHandler()));
+//IMapper mapper = automapper.CreateMapper();
+//builder.Services.AddSingleton(mapper);
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

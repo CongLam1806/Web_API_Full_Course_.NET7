@@ -27,7 +27,7 @@ namespace LearnAPI.Modal
 
         public bool? IsActive { get; set; }
 
-        public string? StatusName { get; set; }
+        public string? Statusname { get; set; }
     }
 
 }
