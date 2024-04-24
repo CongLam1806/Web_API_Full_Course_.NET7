@@ -1,0 +1,253 @@
+2024-04-24 22:30:00.534 +07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-04-24 22:30:00.571 +07:00 [DBG] Hosting starting
+2024-04-24 22:30:00.751 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-24 22:30:00.753 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-24 22:30:00.753 +07:00 [DBG] Loaded hosting startup assembly LearnAPI
+2024-04-24 22:30:00.753 +07:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-04-24 22:30:00.753 +07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-04-24 22:30:00.756 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-24 22:30:00.758 +07:00 [INF] Hosting environment: Development
+2024-04-24 22:30:00.759 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-24 22:30:00.759 +07:00 [DBG] Hosting started
+2024-04-24 22:30:01.006 +07:00 [DBG] Connection id "0HN34EDK1C7UT" accepted.
+2024-04-24 22:30:01.007 +07:00 [DBG] Connection id "0HN34EDK1C7UT" started.
+2024-04-24 22:30:01.016 +07:00 [DBG] Connection id "0HN34EDK1C7UU" accepted.
+2024-04-24 22:30:01.016 +07:00 [DBG] Connection id "0HN34EDK1C7UU" started.
+2024-04-24 22:30:01.049 +07:00 [DBG] Connection id "0HN34EDK1C7UT" received FIN.
+2024-04-24 22:30:01.049 +07:00 [DBG] Connection id "0HN34EDK1C7UU" received FIN.
+2024-04-24 22:30:01.065 +07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-24 22:30:01.065 +07:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-24 22:30:01.989 +07:00 [DBG] Connection id "0HN34EDK1C7UV" accepted.
+2024-04-24 22:30:02.002 +07:00 [DBG] Connection id "0HN34EDK1C7UV" started.
+2024-04-24 22:30:02.006 +07:00 [DBG] Connection id "0HN34EDK1C7UU" stopped.
+2024-04-24 22:30:02.006 +07:00 [DBG] Connection id "0HN34EDK1C7UT" stopped.
+2024-04-24 22:30:02.012 +07:00 [DBG] Connection id "0HN34EDK1C7UU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-24 22:30:02.012 +07:00 [DBG] Connection id "0HN34EDK1C7UT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-24 22:30:02.048 +07:00 [DBG] Connection 0HN34EDK1C7UV established using the following protocol: "Tls12"
+2024-04-24 22:30:02.088 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-24 22:30:02.104 +07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-04-24 22:30:02.122 +07:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-04-24 22:30:02.123 +07:00 [DBG] Request did not match any endpoints
+2024-04-24 22:30:02.215 +07:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-04-24 22:30:02.328 +07:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-04-24 22:30:02.328 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-24 22:30:02.335 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 246.1111ms
+2024-04-24 22:30:02.351 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 21.6881ms
+2024-04-24 22:30:02.355 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-24 22:30:02.390 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.6203ms
+2024-04-24 22:30:02.714 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-24 22:30:02.715 +07:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-04-24 22:30:02.715 +07:00 [DBG] Request did not match any endpoints
+2024-04-24 22:30:02.834 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.7714ms
+2024-04-24 22:30:03.854 +07:00 [DBG] Connection id "0HN34EDK1C7UV" received FIN.
+2024-04-24 22:30:03.857 +07:00 [DBG] The connection queue processing loop for 0HN34EDK1C7UV completed.
+2024-04-24 22:30:03.859 +07:00 [DBG] Connection id "0HN34EDK1C7UV" is closed. The last processed stream ID was 7.
+2024-04-24 22:30:03.859 +07:00 [DBG] Connection id "0HN34EDK1C7UV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-24 22:30:03.868 +07:00 [DBG] Connection id "0HN34EDK1C7UV" stopped.
+2024-04-24 22:31:18.518 +07:00 [DBG] Connection id "0HN34EDK1C7V0" accepted.
+2024-04-24 22:31:18.518 +07:00 [DBG] Connection id "0HN34EDK1C7V0" started.
+2024-04-24 22:31:18.533 +07:00 [DBG] Connection 0HN34EDK1C7V0 established using the following protocol: "Tls12"
+2024-04-24 22:31:18.534 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/Customer/Create application/json 150
+2024-04-24 22:31:18.538 +07:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-04-24 22:31:18.540 +07:00 [DBG] Endpoint 'LearnAPI.Controllers.CustomerController.Create (LearnAPI)' with route pattern 'api/Customer/Create' is valid for the request path '/api/Customer/Create'
+2024-04-24 22:31:18.540 +07:00 [DBG] Request matched endpoint 'LearnAPI.Controllers.CustomerController.Create (LearnAPI)'
+2024-04-24 22:31:18.542 +07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-24 22:31:18.545 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.Create (LearnAPI)'
+2024-04-24 22:31:18.568 +07:00 [INF] Route matched with {action = "Create", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(LearnAPI.Modal.CustomerModal) on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-24 22:31:18.570 +07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-24 22:31:18.570 +07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-04-24 22:31:18.570 +07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-24 22:31:18.570 +07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-24 22:31:18.570 +07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-24 22:31:18.572 +07:00 [DBG] Executing controller factory for controller LearnAPI.Controllers.CustomerController (LearnAPI)
+2024-04-24 22:31:18.699 +07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-24 22:31:18.814 +07:00 [DBG] Executed controller factory for controller LearnAPI.Controllers.CustomerController (LearnAPI)
+2024-04-24 22:31:18.818 +07:00 [DBG] Attempting to bind parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal' ...
+2024-04-24 22:31:18.820 +07:00 [DBG] Attempting to bind parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal' using the name '' in request data ...
+2024-04-24 22:31:18.821 +07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-04-24 22:31:18.841 +07:00 [DBG] Connection id "0HN34EDK1C7V0", Request id "0HN34EDK1C7V0:00000001": started reading request body.
+2024-04-24 22:31:18.842 +07:00 [DBG] Connection id "0HN34EDK1C7V0", Request id "0HN34EDK1C7V0:00000001": done reading request body.
+2024-04-24 22:31:18.848 +07:00 [DBG] JSON input formatter succeeded, deserializing to type 'LearnAPI.Modal.CustomerModal'
+2024-04-24 22:31:18.848 +07:00 [DBG] Done attempting to bind parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal'.
+2024-04-24 22:31:18.848 +07:00 [DBG] Done attempting to bind parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal'.
+2024-04-24 22:31:18.848 +07:00 [DBG] Attempting to validate the bound parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal' ...
+2024-04-24 22:31:18.859 +07:00 [DBG] Done attempting to validate the bound parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal'.
+2024-04-24 22:31:18.936 +07:00 [INF] Executing action method LearnAPI.Controllers.CustomerController.Create (LearnAPI) - Validation state: "Valid"
+2024-04-24 22:31:18.940 +07:00 [INF] Create Begins
+2024-04-24 22:31:19.279 +07:00 [DBG] Entity Framework Core 7.0.5 initialized 'LearndataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2024-04-24 22:31:19.331 +07:00 [DBG] Context 'LearndataContext' started tracking 'TblCustomer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-04-24 22:31:19.334 +07:00 [DBG] SaveChanges starting for 'LearndataContext'.
+2024-04-24 22:31:19.337 +07:00 [DBG] DetectChanges starting for 'LearndataContext'.
+2024-04-24 22:31:19.347 +07:00 [DBG] DetectChanges completed for 'LearndataContext'.
+2024-04-24 22:31:19.394 +07:00 [DBG] Creating DbConnection.
+2024-04-24 22:31:19.437 +07:00 [DBG] Created DbConnection. (41ms).
+2024-04-24 22:31:19.440 +07:00 [DBG] Opening connection to database 'test_db' on server 'TRANCONGLAM\SQLEXPRESS'.
+2024-04-24 22:31:19.731 +07:00 [DBG] Opened connection to database 'test_db' on server 'TRANCONGLAM\SQLEXPRESS'.
+2024-04-24 22:31:19.737 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-24 22:31:19.741 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2024-04-24 22:31:19.749 +07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (11ms).
+2024-04-24 22:31:19.759 +07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 50) (DbType = AnsiString), @p3='?' (DbType = Boolean), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_customer] ([Code], [Creditlimit], [Email], [IsActive], [Name], [Phone], [Taxcode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2024-04-24 22:31:19.848 +07:00 [INF] Executed DbCommand (88ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 50) (DbType = AnsiString), @p3='?' (DbType = Boolean), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_customer] ([Code], [Creditlimit], [Email], [IsActive], [Name], [Phone], [Taxcode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2024-04-24 22:31:19.853 +07:00 [DBG] Closing data reader to 'test_db' on server 'TRANCONGLAM\SQLEXPRESS'.
+2024-04-24 22:31:19.861 +07:00 [DBG] A data reader for 'test_db' on server 'TRANCONGLAM\SQLEXPRESS' is being disposed after spending 7ms reading results.
+2024-04-24 22:31:19.864 +07:00 [DBG] Closing connection to database 'test_db' on server 'TRANCONGLAM\SQLEXPRESS'.
+2024-04-24 22:31:19.868 +07:00 [DBG] Closed connection to database 'test_db' on server 'TRANCONGLAM\SQLEXPRESS' (3ms).
+2024-04-24 22:31:19.877 +07:00 [DBG] An entity of type 'TblCustomer' tracked by 'LearndataContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-04-24 22:31:19.879 +07:00 [DBG] SaveChanges completed for 'LearndataContext' with 1 entities written to the database.
+2024-04-24 22:31:19.884 +07:00 [INF] Executed action method LearnAPI.Controllers.CustomerController.Create (LearnAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 943.9687ms.
+2024-04-24 22:31:19.887 +07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-04-24 22:31:19.888 +07:00 [DBG] No information found on request to perform content negotiation.
+2024-04-24 22:31:19.888 +07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-04-24 22:31:19.888 +07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-04-24 22:31:19.889 +07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-04-24 22:31:19.889 +07:00 [INF] Executing OkObjectResult, writing value of type 'LearnAPI.Helper.APIResponse'.
+2024-04-24 22:31:19.895 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.Create (LearnAPI) in 1321.8516ms
+2024-04-24 22:31:19.896 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.Create (LearnAPI)'
+2024-04-24 22:31:19.897 +07:00 [DBG] 'LearndataContext' disposed.
+2024-04-24 22:31:19.900 +07:00 [DBG] Disposing connection to database 'test_db' on server 'TRANCONGLAM\SQLEXPRESS'.
+2024-04-24 22:31:19.901 +07:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-04-24 22:31:19.902 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/Customer/Create application/json 150 - 200 - application/json;+charset=utf-8 1367.5467ms
+2024-04-24 22:31:23.961 +07:00 [DBG] Connection id "0HN34EDK1C7V0" received FIN.
+2024-04-24 22:31:23.961 +07:00 [DBG] Connection id "0HN34EDK1C7V0" is closed. The last processed stream ID was 1.
+2024-04-24 22:31:23.961 +07:00 [DBG] Connection id "0HN34EDK1C7V0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-24 22:31:23.961 +07:00 [DBG] The connection queue processing loop for 0HN34EDK1C7V0 completed.
+2024-04-24 22:31:23.962 +07:00 [DBG] Connection id "0HN34EDK1C7V0" stopped.
+2024-04-24 22:35:41.145 +07:00 [DBG] Connection id "0HN34EDK1C7V1" accepted.
+2024-04-24 22:35:41.146 +07:00 [DBG] Connection id "0HN34EDK1C7V1" started.
+2024-04-24 22:35:41.183 +07:00 [DBG] Connection 0HN34EDK1C7V1 established using the following protocol: "Tls12"
+2024-04-24 22:35:41.189 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/Customer/Create application/json 150
+2024-04-24 22:35:41.190 +07:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-04-24 22:35:41.190 +07:00 [DBG] Endpoint 'LearnAPI.Controllers.CustomerController.Create (LearnAPI)' with route pattern 'api/Customer/Create' is valid for the request path '/api/Customer/Create'
+2024-04-24 22:35:41.190 +07:00 [DBG] Request matched endpoint 'LearnAPI.Controllers.CustomerController.Create (LearnAPI)'
+2024-04-24 22:35:41.190 +07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-24 22:35:41.190 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.Create (LearnAPI)'
+2024-04-24 22:35:41.191 +07:00 [INF] Route matched with {action = "Create", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(LearnAPI.Modal.CustomerModal) on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-24 22:35:41.191 +07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-24 22:35:41.191 +07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-04-24 22:35:41.191 +07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-24 22:35:41.191 +07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-24 22:35:41.191 +07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-24 22:35:41.191 +07:00 [DBG] Executing controller factory for controller LearnAPI.Controllers.CustomerController (LearnAPI)
+2024-04-24 22:35:41.194 +07:00 [DBG] Executed controller factory for controller LearnAPI.Controllers.CustomerController (LearnAPI)
+2024-04-24 22:35:41.194 +07:00 [DBG] Attempting to bind parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal' ...
+2024-04-24 22:35:41.195 +07:00 [DBG] Attempting to bind parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal' using the name '' in request data ...
+2024-04-24 22:35:41.195 +07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-04-24 22:35:41.195 +07:00 [DBG] Connection id "0HN34EDK1C7V1", Request id "0HN34EDK1C7V1:00000001": started reading request body.
+2024-04-24 22:35:41.195 +07:00 [DBG] Connection id "0HN34EDK1C7V1", Request id "0HN34EDK1C7V1:00000001": done reading request body.
+2024-04-24 22:35:41.195 +07:00 [DBG] JSON input formatter succeeded, deserializing to type 'LearnAPI.Modal.CustomerModal'
+2024-04-24 22:35:41.195 +07:00 [DBG] Done attempting to bind parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal'.
+2024-04-24 22:35:41.195 +07:00 [DBG] Done attempting to bind parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal'.
+2024-04-24 22:35:41.195 +07:00 [DBG] Attempting to validate the bound parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal' ...
+2024-04-24 22:35:41.196 +07:00 [DBG] Done attempting to validate the bound parameter 'customerDTO' of type 'LearnAPI.Modal.CustomerModal'.
+2024-04-24 22:35:41.228 +07:00 [INF] Executing action method LearnAPI.Controllers.CustomerController.Create (LearnAPI) - Validation state: "Valid"
+2024-04-24 22:35:41.230 +07:00 [INF] Create Begins
+2024-04-24 22:35:41.267 +07:00 [DBG] Entity Framework Core 7.0.5 initialized 'LearndataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2024-04-24 22:35:41.267 +07:00 [DBG] Context 'LearndataContext' started tracking 'TblCustomer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-04-24 22:35:41.267 +07:00 [DBG] SaveChanges starting for 'LearndataContext'.
+2024-04-24 22:35:41.268 +07:00 [DBG] DetectChanges starting for 'LearndataContext'.
+2024-04-24 22:35:41.268 +07:00 [DBG] DetectChanges completed for 'LearndataContext'.
+2024-04-24 22:35:41.269 +07:00 [DBG] Creating DbConnection.
+2024-04-24 22:35:41.269 +07:00 [DBG] Created DbConnection. (0ms).
+2024-04-24 22:35:41.269 +07:00 [DBG] Opening connection to database 'test_db' on server 'TRANCONGLAM\SQLEXPRESS'.
+2024-04-24 22:35:41.270 +07:00 [DBG] Opened connection to database 'test_db' on server 'TRANCONGLAM\SQLEXPRESS'.
+2024-04-24 22:35:41.271 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-24 22:35:41.271 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-24 22:35:41.271 +07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-04-24 22:35:41.271 +07:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 50) (DbType = AnsiString), @p3='?' (DbType = Boolean), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_customer] ([Code], [Creditlimit], [Email], [IsActive], [Name], [Phone], [Taxcode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2024-04-24 22:35:41.311 +07:00 [ERR] Failed executing DbCommand (28ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 50) (DbType = AnsiString), @p3='?' (DbType = Boolean), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_customer] ([Code], [Creditlimit], [Email], [IsActive], [Name], [Phone], [Taxcode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2024-04-24 22:35:41.315 +07:00 [DBG] Closing connection to database 'test_db' on server 'TRANCONGLAM\SQLEXPRESS'.
+2024-04-24 22:35:41.315 +07:00 [DBG] Closed connection to database 'test_db' on server 'TRANCONGLAM\SQLEXPRESS' (0ms).
+2024-04-24 22:35:41.334 +07:00 [ERR] An exception occurred in the database while saving changes for context type 'LearnAPI.Repos.LearndataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_tbl_customer'. Cannot insert duplicate key in object 'dbo.tbl_customer'. The duplicate key value is (string).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:db26b44d-9558-49cf-955d-c7e6e9e5e009
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_tbl_customer'. Cannot insert duplicate key in object 'dbo.tbl_customer'. The duplicate key value is (string).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:db26b44d-9558-49cf-955d-c7e6e9e5e009
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-04-24 22:35:41.456 +07:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+2024-04-24 22:35:41.456 +07:00 [INF] Executed action method LearnAPI.Controllers.CustomerController.Create (LearnAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 228.1349ms.
+2024-04-24 22:35:41.457 +07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-04-24 22:35:41.457 +07:00 [DBG] No information found on request to perform content negotiation.
+2024-04-24 22:35:41.457 +07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-04-24 22:35:41.457 +07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-04-24 22:35:41.457 +07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-04-24 22:35:41.457 +07:00 [INF] Executing OkObjectResult, writing value of type 'LearnAPI.Helper.APIResponse'.
+2024-04-24 22:35:41.457 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.Create (LearnAPI) in 266.212ms
+2024-04-24 22:35:41.457 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.Create (LearnAPI)'
+2024-04-24 22:35:41.458 +07:00 [DBG] 'LearndataContext' disposed.
+2024-04-24 22:35:41.458 +07:00 [DBG] Disposing connection to database 'test_db' on server 'TRANCONGLAM\SQLEXPRESS'.
+2024-04-24 22:35:41.458 +07:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-04-24 22:35:41.458 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/Customer/Create application/json 150 - 200 - application/json;+charset=utf-8 269.2051ms
+2024-04-24 22:35:44.280 +07:00 [DBG] Connection id "0HN34EDK1C7V1" received FIN.
+2024-04-24 22:35:44.281 +07:00 [DBG] Connection id "0HN34EDK1C7V1" is closed. The last processed stream ID was 1.
+2024-04-24 22:35:44.281 +07:00 [DBG] Connection id "0HN34EDK1C7V1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-24 22:35:44.281 +07:00 [DBG] The connection queue processing loop for 0HN34EDK1C7V1 completed.
+2024-04-24 22:35:44.281 +07:00 [DBG] Connection id "0HN34EDK1C7V1" stopped.

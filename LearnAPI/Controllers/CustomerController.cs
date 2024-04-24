@@ -1,10 +1,12 @@
 ﻿using LearnAPI.Modal;
 using LearnAPI.Service;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearnAPI.Controllers
 {
+    //[DisableCors]
     [Route("api/[controller]")]
     [ApiController]
     public class CustomerController : ControllerBase
@@ -15,6 +17,8 @@ namespace LearnAPI.Controllers
             this.service = service;
         }
 
+
+        //[EnableCors("corspolicy1")]
         [HttpGet("GetAll")]
         public async Task<IActionResult> Get()
         {

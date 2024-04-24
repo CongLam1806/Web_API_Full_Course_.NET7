@@ -4,6 +4,7 @@ using LearnAPI.Helper;
 using LearnAPI.Repos;
 using LearnAPI.Service;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +21,33 @@ builder.Services.AddDbContext<LearndataContext>(o => o.UseSqlServer(builder.Conf
 //IMapper mapper = automapper.CreateMapper();
 //builder.Services.AddSingleton(mapper);
 
+//mapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+//cors
+builder.Services.AddCors(p=>p.AddPolicy("corspolicy", builder => {
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
+
+builder.Services.AddCors(p => p.AddDefaultPolicy( builder => {
+    builder.WithOrigins("https://domain3.com").AllowAnyMethod().AllowAnyHeader();
+}));
+
+builder.Services.AddCors(p => p.AddPolicy("corspolicy", builder => {
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
+
+
+//logging
+string logpath = builder.Configuration.GetSection("Logging:Logpath").Value;
+var _logger = new LoggerConfiguration()
+    .MinimumLevel.Information() //Debug or Error
+    .MinimumLevel.Override("microsoft", Serilog.Events.LogEventLevel.Warning)
+    .Enrich.FromLogContext()
+    .WriteTo.File(logpath)
+    .CreateLogger();
+builder.Logging.AddSerilog(_logger);
+
 
 var app = builder.Build();
 
@@ -30,6 +57,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors();
 
 app.UseHttpsRedirection();
 

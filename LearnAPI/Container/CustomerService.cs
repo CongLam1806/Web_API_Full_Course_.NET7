@@ -5,6 +5,7 @@ using LearnAPI.Repos;
 using LearnAPI.Repos.Models;
 using LearnAPI.Service;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace LearnAPI.Container
 {
@@ -12,10 +13,13 @@ namespace LearnAPI.Container
     {
         private readonly LearndataContext context;
         private readonly IMapper mapper;
-        public CustomerService(LearndataContext context, IMapper mapper) 
+        private readonly ILogger<CustomerService> logger;
+
+        public CustomerService(LearndataContext context, IMapper mapper, ILogger<CustomerService> logger) 
         {
             this.context = context;
             this.mapper = mapper;
+            this.logger = logger;
         }
 
         public async Task<APIResponse> Create(CustomerModal customer)
@@ -23,6 +27,7 @@ namespace LearnAPI.Container
             APIResponse response = new APIResponse();
             try
             {
+                this.logger.LogInformation("Create Begins");
                 TblCustomer _customer = this.mapper.Map<CustomerModal, TblCustomer>(customer);
                 await this.context.TblCustomers.AddAsync(_customer);
                 await this.context.SaveChangesAsync();
@@ -33,6 +38,7 @@ namespace LearnAPI.Container
             {
                 response.ResponseCode = 400;
                 response.ErrorMessage = ex.Message;
+                this.logger.LogError(ex.Message, ex);
             }
             return response;
         }
