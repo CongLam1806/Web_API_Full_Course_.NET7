@@ -26,7 +26,7 @@ public partial class LearndataContext : DbContext
 
     public virtual DbSet<TblUser> TblUsers { get; set; }
 
-    
+   
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         OnModelCreatingPartial(modelBuilder);

@@ -251,3 +251,56 @@ Error Number:2627,State:1,Class:14
 2024-04-24 22:35:44.281 +07:00 [DBG] Connection id "0HN34EDK1C7V1" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-04-24 22:35:44.281 +07:00 [DBG] The connection queue processing loop for 0HN34EDK1C7V1 completed.
 2024-04-24 22:35:44.281 +07:00 [DBG] Connection id "0HN34EDK1C7V1" stopped.
+2024-04-25 16:02:25.321 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-25 16:02:25.329 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-25 16:02:25.334 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-25 16:02:25.338 +07:00 [INF] Hosting environment: Development
+2024-04-25 16:02:25.339 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-25 16:02:26.260 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-25 16:02:26.624 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 366.5960ms
+2024-04-25 16:02:26.627 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-25 16:02:26.634 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-25 16:02:26.648 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 21.2689ms
+2024-04-25 16:02:26.686 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.8217ms
+2024-04-25 16:02:26.854 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-25 16:02:26.940 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.7564ms
+2024-04-25 16:02:48.295 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/GetAll - -
+2024-04-25 16:02:48.314 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.Get (LearnAPI)'
+2024-04-25 16:02:48.335 +07:00 [INF] Route matched with {action = "Get", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-25 16:02:48.804 +07:00 [INF] Executing action method LearnAPI.Controllers.CustomerController.Get (LearnAPI) - Validation state: "Valid"
+2024-04-25 16:02:50.005 +07:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-25 16:02:50.072 +07:00 [INF] Executed action method LearnAPI.Controllers.CustomerController.Get (LearnAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1264.8404ms.
+2024-04-25 16:02:50.076 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LearnAPI.Modal.CustomerModal, LearnAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-25 16:02:50.098 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.Get (LearnAPI) in 1759.7926ms
+2024-04-25 16:02:50.098 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.Get (LearnAPI)'
+2024-04-25 16:02:50.105 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/GetAll - - - 200 - application/json;+charset=utf-8 1809.8778ms
+2024-04-25 16:02:58.773 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/GetAll - -
+2024-04-25 16:02:58.775 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.Get (LearnAPI)'
+2024-04-25 16:02:58.775 +07:00 [INF] Route matched with {action = "Get", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-25 16:02:58.793 +07:00 [INF] Executing action method LearnAPI.Controllers.CustomerController.Get (LearnAPI) - Validation state: "Valid"
+2024-04-25 16:02:58.812 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-25 16:02:58.813 +07:00 [INF] Executed action method LearnAPI.Controllers.CustomerController.Get (LearnAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.0397ms.
+2024-04-25 16:02:58.814 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LearnAPI.Modal.CustomerModal, LearnAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-25 16:02:58.814 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.Get (LearnAPI) in 39.453ms
+2024-04-25 16:02:58.815 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.Get (LearnAPI)'
+2024-04-25 16:02:58.815 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/GetAll - - - 200 - application/json;+charset=utf-8 41.8855ms
+2024-04-25 16:03:00.465 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/GetAll - -
+2024-04-25 16:03:00.467 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/GetAll - - - 503 0 - 2.2608ms
+2024-04-25 16:03:04.047 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/GetAll - -
+2024-04-25 16:03:04.047 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/GetAll - - - 503 0 - 0.6039ms
+2024-04-25 16:03:14.433 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/GetAll - -
+2024-04-25 16:03:14.434 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.Get (LearnAPI)'
+2024-04-25 16:03:14.435 +07:00 [INF] Route matched with {action = "Get", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-25 16:03:14.451 +07:00 [INF] Executing action method LearnAPI.Controllers.CustomerController.Get (LearnAPI) - Validation state: "Valid"
+2024-04-25 16:03:14.491 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-25 16:03:14.492 +07:00 [INF] Executed action method LearnAPI.Controllers.CustomerController.Get (LearnAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 40.9265ms.
+2024-04-25 16:03:14.492 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LearnAPI.Modal.CustomerModal, LearnAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-25 16:03:14.492 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.Get (LearnAPI) in 57.3388ms
+2024-04-25 16:03:14.492 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.Get (LearnAPI)'
+2024-04-25 16:03:14.492 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/GetAll - - - 200 - application/json;+charset=utf-8 58.9124ms
