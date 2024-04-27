@@ -25,7 +25,7 @@ namespace LearnAPI.Helper
                 return AuthenticateResult.Fail("No header found");
             }
             var headervalue = AuthenticationHeaderValue.Parse(Request.Headers["Authorization"]);
-            if(headervalue == null)
+            if(headervalue != null)
             {
                 var bytes = Convert.FromBase64String(headervalue.Parameter);
                 string credentials = Encoding.UTF8.GetString(bytes);

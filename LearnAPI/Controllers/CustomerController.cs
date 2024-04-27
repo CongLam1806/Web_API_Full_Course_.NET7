@@ -21,7 +21,7 @@ namespace LearnAPI.Controllers
             this.service = service;
         }
 
-
+        [AllowAnonymous]
         //[EnableCors("corspolicy1")]
         [HttpGet("GetAll")]
         public async Task<IActionResult> Get()
@@ -36,6 +36,7 @@ namespace LearnAPI.Controllers
 
 
         [DisableRateLimiting]
+      
         [HttpGet("GetByCode")]
         public async Task<IActionResult> GetByCode(string code)
         {
