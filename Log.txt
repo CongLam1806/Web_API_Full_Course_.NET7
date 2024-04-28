@@ -1499,3 +1499,188 @@ WHERE [t].[Code] = @__p_0
 2024-04-27 22:54:30.702 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.GetByCode (LearnAPI) in 167.495ms
 2024-04-27 22:54:30.702 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.GetByCode (LearnAPI)'
 2024-04-27 22:54:30.702 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/GetByCode?code=002 - - - 200 - application/json;+charset=utf-8 211.3501ms
+2024-04-28 12:24:11.436 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-28 12:24:11.682 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-28 12:24:11.683 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-28 12:24:11.687 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-28 12:24:11.689 +07:00 [INF] Hosting environment: Development
+2024-04-28 12:24:11.690 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-28 12:24:12.075 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-28 12:24:12.325 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 251.9315ms
+2024-04-28 12:24:12.336 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-28 12:24:12.337 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-28 12:24:12.347 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 11.4221ms
+2024-04-28 12:24:12.372 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.2444ms
+2024-04-28 12:24:12.493 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-28 12:24:12.595 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.8459ms
+2024-04-28 12:24:25.874 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/Authorize/GenerateToken application/json 47
+2024-04-28 12:24:25.879 +07:00 [INF] CORS policy execution successful.
+2024-04-28 12:24:25.934 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI)'
+2024-04-28 12:24:25.952 +07:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(LearnAPI.Modal.UserCred) on controller LearnAPI.Controllers.AuthorizeController (LearnAPI).
+2024-04-28 12:24:26.202 +07:00 [INF] Executing action method LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI) - Validation state: "Valid"
+2024-04-28 12:24:27.254 +07:00 [INF] Executed DbCommand (107ms) [Parameters=[@__userCred_username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_username_0 AND [t].[password] = @__userCred_password_1
+2024-04-28 12:24:27.448 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-04-28 12:24:27.601 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_refreshtoken] ([userid], [refreshtoken], [tokenid])
+VALUES (@p0, @p1, @p2);
+2024-04-28 12:24:27.613 +07:00 [INF] Executed action method LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1405.9721ms.
+2024-04-28 12:24:27.620 +07:00 [INF] Executing OkObjectResult, writing value of type 'LearnAPI.Modal.TokenResponse'.
+2024-04-28 12:24:27.629 +07:00 [INF] Executed action LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI) in 1673.0222ms
+2024-04-28 12:24:27.630 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI)'
+2024-04-28 12:24:27.639 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/Authorize/GenerateToken application/json 47 - 200 - application/json;+charset=utf-8 1764.6397ms
+2024-04-28 13:21:14.439 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-28 13:21:14.561 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-28 13:21:14.561 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-28 13:21:14.562 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-28 13:21:14.563 +07:00 [INF] Hosting environment: Development
+2024-04-28 13:21:14.563 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-28 13:21:15.001 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-28 13:21:15.180 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 180.0591ms
+2024-04-28 13:21:15.187 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-28 13:21:15.192 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-28 13:21:15.194 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 6.9609ms
+2024-04-28 13:21:15.213 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.9935ms
+2024-04-28 13:21:15.433 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-28 13:21:15.528 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.5501ms
+2024-04-28 13:21:47.470 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/Authorize/GenerateToken application/json 47
+2024-04-28 13:21:47.474 +07:00 [INF] CORS policy execution successful.
+2024-04-28 13:21:47.497 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI)'
+2024-04-28 13:21:47.517 +07:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(LearnAPI.Modal.UserCred) on controller LearnAPI.Controllers.AuthorizeController (LearnAPI).
+2024-04-28 13:21:48.271 +07:00 [INF] Executed DbCommand (46ms) [Parameters=[@__userCred_username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_username_0 AND [t].[password] = @__userCred_password_1
+2024-04-28 13:21:48.394 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-04-28 13:21:48.451 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refreshtoken] SET [refreshtoken] = @p0
+OUTPUT 1
+WHERE [userid] = @p1;
+2024-04-28 13:21:48.463 +07:00 [INF] Executing OkObjectResult, writing value of type 'LearnAPI.Modal.TokenResponse'.
+2024-04-28 13:21:48.468 +07:00 [INF] Executed action LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI) in 947.5804ms
+2024-04-28 13:21:48.468 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI)'
+2024-04-28 13:21:48.473 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/Authorize/GenerateToken application/json 47 - 200 - application/json;+charset=utf-8 1002.8916ms
+2024-04-28 13:21:58.500 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/Authorize/GenerateRefreshToken application/json 283
+2024-04-28 13:21:58.502 +07:00 [INF] CORS policy execution successful.
+2024-04-28 13:21:58.504 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI)'
+2024-04-28 13:21:58.509 +07:00 [INF] Route matched with {action = "GenerateRefreshToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateRefreshToken(LearnAPI.Modal.TokenResponse) on controller LearnAPI.Controllers.AuthorizeController (LearnAPI).
+2024-04-28 13:21:58.559 +07:00 [INF] Executed DbCommand (30ms) [Parameters=[@__token_RefreshToken_0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[refreshtoken] = @__token_RefreshToken_0
+2024-04-28 13:21:58.588 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__8__locals1_token_RefreshToken_1='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0 AND [t].[refreshtoken] = @__8__locals1_token_RefreshToken_1
+2024-04-28 13:21:58.593 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-04-28 13:21:58.597 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refreshtoken] SET [refreshtoken] = @p0
+OUTPUT 1
+WHERE [userid] = @p1;
+2024-04-28 13:21:58.598 +07:00 [INF] Executing OkObjectResult, writing value of type 'LearnAPI.Modal.TokenResponse'.
+2024-04-28 13:21:58.598 +07:00 [INF] Executed action LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI) in 88.3368ms
+2024-04-28 13:21:58.598 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI)'
+2024-04-28 13:21:58.598 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/Authorize/GenerateRefreshToken application/json 283 - 200 - application/json;+charset=utf-8 98.6597ms
+2024-04-28 13:22:01.370 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/Authorize/GenerateRefreshToken application/json 283
+2024-04-28 13:22:01.372 +07:00 [INF] CORS policy execution successful.
+2024-04-28 13:22:01.373 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI)'
+2024-04-28 13:22:01.374 +07:00 [INF] Route matched with {action = "GenerateRefreshToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateRefreshToken(LearnAPI.Modal.TokenResponse) on controller LearnAPI.Controllers.AuthorizeController (LearnAPI).
+2024-04-28 13:22:01.418 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__token_RefreshToken_0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[refreshtoken] = @__token_RefreshToken_0
+2024-04-28 13:22:01.419 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-04-28 13:22:01.420 +07:00 [INF] Executed action LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI) in 46.0831ms
+2024-04-28 13:22:01.420 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI)'
+2024-04-28 13:22:01.420 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/Authorize/GenerateRefreshToken application/json 283 - 401 - application/problem+json;+charset=utf-8 49.5048ms
+2024-04-28 13:22:07.403 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/Authorize/GenerateToken application/json 47
+2024-04-28 13:22:07.403 +07:00 [INF] CORS policy execution successful.
+2024-04-28 13:22:07.403 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI)'
+2024-04-28 13:22:07.403 +07:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(LearnAPI.Modal.UserCred) on controller LearnAPI.Controllers.AuthorizeController (LearnAPI).
+2024-04-28 13:22:07.408 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userCred_username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_username_0 AND [t].[password] = @__userCred_password_1
+2024-04-28 13:22:07.410 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-04-28 13:22:07.414 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refreshtoken] SET [refreshtoken] = @p0
+OUTPUT 1
+WHERE [userid] = @p1;
+2024-04-28 13:22:07.415 +07:00 [INF] Executing OkObjectResult, writing value of type 'LearnAPI.Modal.TokenResponse'.
+2024-04-28 13:22:07.415 +07:00 [INF] Executed action LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI) in 11.4286ms
+2024-04-28 13:22:07.415 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateToken (LearnAPI)'
+2024-04-28 13:22:07.416 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/Authorize/GenerateToken application/json 47 - 200 - application/json;+charset=utf-8 12.4417ms
+2024-04-28 13:22:15.753 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/Authorize/GenerateRefreshToken application/json 283
+2024-04-28 13:22:15.754 +07:00 [INF] CORS policy execution successful.
+2024-04-28 13:22:15.754 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI)'
+2024-04-28 13:22:15.754 +07:00 [INF] Route matched with {action = "GenerateRefreshToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateRefreshToken(LearnAPI.Modal.TokenResponse) on controller LearnAPI.Controllers.AuthorizeController (LearnAPI).
+2024-04-28 13:22:15.758 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__token_RefreshToken_0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[refreshtoken] = @__token_RefreshToken_0
+2024-04-28 13:22:15.763 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__8__locals1_token_RefreshToken_1='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0 AND [t].[refreshtoken] = @__8__locals1_token_RefreshToken_1
+2024-04-28 13:22:15.769 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-04-28 13:22:15.773 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refreshtoken] SET [refreshtoken] = @p0
+OUTPUT 1
+WHERE [userid] = @p1;
+2024-04-28 13:22:15.774 +07:00 [INF] Executing OkObjectResult, writing value of type 'LearnAPI.Modal.TokenResponse'.
+2024-04-28 13:22:15.774 +07:00 [INF] Executed action LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI) in 20.1836ms
+2024-04-28 13:22:15.774 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI)'
+2024-04-28 13:22:15.774 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/Authorize/GenerateRefreshToken application/json 283 - 200 - application/json;+charset=utf-8 20.8011ms
+2024-04-28 13:22:22.698 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/Authorize/GenerateRefreshToken application/json 420
+2024-04-28 13:22:22.699 +07:00 [INF] CORS policy execution successful.
+2024-04-28 13:22:22.699 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI)'
+2024-04-28 13:22:22.699 +07:00 [INF] Route matched with {action = "GenerateRefreshToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateRefreshToken(LearnAPI.Modal.TokenResponse) on controller LearnAPI.Controllers.AuthorizeController (LearnAPI).
+2024-04-28 13:22:22.718 +07:00 [INF] Executed DbCommand (18ms) [Parameters=[@__token_RefreshToken_0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[refreshtoken] = @__token_RefreshToken_0
+2024-04-28 13:22:22.721 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__8__locals1_token_RefreshToken_1='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0 AND [t].[refreshtoken] = @__8__locals1_token_RefreshToken_1
+2024-04-28 13:22:22.723 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-04-28 13:22:22.725 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refreshtoken] SET [refreshtoken] = @p0
+OUTPUT 1
+WHERE [userid] = @p1;
+2024-04-28 13:22:22.725 +07:00 [INF] Executing OkObjectResult, writing value of type 'LearnAPI.Modal.TokenResponse'.
+2024-04-28 13:22:22.725 +07:00 [INF] Executed action LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI) in 26.5204ms
+2024-04-28 13:22:22.725 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.AuthorizeController.GenerateRefreshToken (LearnAPI)'
+2024-04-28 13:22:22.726 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/Authorize/GenerateRefreshToken application/json 420 - 200 - application/json;+charset=utf-8 27.0937ms

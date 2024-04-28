@@ -1,4 +1,5 @@
 ﻿using LearnAPI.Repos;
+using LearnAPI.Repos.Models;
 using LearnAPI.Service;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
@@ -21,11 +22,21 @@ namespace LearnAPI.Container
             {
                 randomnumbergenerator.GetBytes(randomnumber);
                 string refreshtoken = Convert.ToBase64String(randomnumber);
-                var Existtoken = this.context.TblRefreshtokens.FirstOrDefaultAsync(item => item.Userid == username);
+                var Existtoken = await this.context.TblRefreshtokens.FirstOrDefaultAsync(item => item.Userid == username);
                 if (Existtoken != null)
                 {
-                    Existtoken.RefreshToken = refreshtoken;
+                    Existtoken.Refreshtoken = refreshtoken;
+                } else
+                {
+                    await this.context.TblRefreshtokens.AddAsync(new TblRefreshtoken
+                    {
+                        Userid = username,
+                        Tokenid = new Random().Next().ToString(),
+                        Refreshtoken = refreshtoken
+                    });
                 }
+
+                await this.context.SaveChangesAsync();
                 return refreshtoken;
             }
         }
