@@ -1,10 +1,12 @@
-﻿using LearnAPI.Modal;
+﻿using ClosedXML.Excel;
+using LearnAPI.Modal;
 using LearnAPI.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
+using System.Data;
 
 namespace LearnAPI.Controllers
 {
@@ -67,6 +69,43 @@ namespace LearnAPI.Controllers
         {
             var data = await this.service.Remove(code);
             return Ok(data);
+        }
+
+        [AllowAnonymous]
+        [HttpGet("ExportExcel")]
+        public async Task<IActionResult> ExportExcel()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Code", typeof(string));
+                dt.Columns.Add("Name", typeof(string));
+                dt.Columns.Add("Email", typeof(string));
+                dt.Columns.Add("Phone", typeof(string));
+                dt.Columns.Add("CreditLimit", typeof(int));
+                var data = await this.service.GetAll();
+                if (data != null && data.Count > 0)
+                {
+                    data.ForEach(item =>
+                    {
+                        dt.Rows.Add(item.Code, item.Name, item.Email, item.Phone, item.Creditlimit);
+                    });
+                }
+                using (XLWorkbook wb = new XLWorkbook())
+
+                {
+                    wb.AddWorksheet(dt, "Customer Info");
+                    using(MemoryStream stream = new MemoryStream())
+                    {
+                        wb.SaveAs(stream);
+                        return File(stream.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "Customer.xlsx");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return NotFound();
+            }
         }
     }
 }
