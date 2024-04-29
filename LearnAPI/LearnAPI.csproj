@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <Folder Include="Repos\" />
+    <Folder Include="wwwroot\Export\" />
     <Folder Include="wwwroot\Upload\Product\" />
   </ItemGroup>
 

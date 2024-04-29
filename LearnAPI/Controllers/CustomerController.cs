@@ -18,9 +18,11 @@ namespace LearnAPI.Controllers
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService service;
-        public CustomerController(ICustomerService service)
+        private readonly IWebHostEnvironment environment;
+        public CustomerController(ICustomerService service, IWebHostEnvironment environment)
         {
             this.service = service;
+            this.environment = environment; 
         }
 
         [AllowAnonymous]
@@ -38,7 +40,6 @@ namespace LearnAPI.Controllers
 
 
         [DisableRateLimiting]
-      
         [HttpGet("GetByCode")]
         public async Task<IActionResult> GetByCode(string code)
         {
@@ -77,6 +78,8 @@ namespace LearnAPI.Controllers
         {
             try
             {
+                string Filepath = GetFilepath();
+                string excelpath = Filepath + "\\customerinfo.xlsx";
                 DataTable dt = new DataTable();
                 dt.Columns.Add("Code", typeof(string));
                 dt.Columns.Add("Name", typeof(string));
@@ -98,6 +101,11 @@ namespace LearnAPI.Controllers
                     using(MemoryStream stream = new MemoryStream())
                     {
                         wb.SaveAs(stream);
+                        if (System.IO.File.Exists(excelpath))
+                        {
+                            System.IO.File.Delete(excelpath);
+                        }
+                        wb.SaveAs(excelpath);
                         return File(stream.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "Customer.xlsx");
                     }
                 }
@@ -106,6 +114,13 @@ namespace LearnAPI.Controllers
             {
                 return NotFound();
             }
+        }
+
+
+        [NonAction]
+        private string GetFilepath()
+        {
+            return this.environment.WebRootPath + "\\Export";
         }
     }
 }

@@ -2272,3 +2272,265 @@ FROM [tbl_customer] AS [t]
 2024-04-28 23:00:45.109 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI) in 2241.7918ms
 2024-04-28 23:00:45.109 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
 2024-04-28 23:00:45.117 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - - - 200 7155 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 2374.0529ms
+2024-04-29 12:20:50.147 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 12:20:50.336 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-29 12:20:50.336 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-29 12:20:50.339 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 12:20:50.339 +07:00 [INF] Hosting environment: Development
+2024-04-29 12:20:50.339 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-29 12:20:50.866 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:20:51.050 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 186.8883ms
+2024-04-29 12:20:51.057 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:20:51.063 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 5.3243ms
+2024-04-29 12:20:51.063 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:20:51.078 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.6484ms
+2024-04-29 12:20:51.216 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:20:51.311 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.7498ms
+2024-04-29 12:21:04.982 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - -
+2024-04-29 12:21:05.015 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 12:21:05.031 +07:00 [INF] Route matched with {action = "ExportExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportExcel() on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-29 12:21:05.228 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-04-29 12:21:05.233 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI) in 199.6889ms
+2024-04-29 12:21:05.234 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 12:21:05.235 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - - - 404 - application/problem+json;+charset=utf-8 252.5517ms
+2024-04-29 12:31:59.117 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:31:59.127 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 10.1700ms
+2024-04-29 12:31:59.135 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:31:59.136 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.7697ms
+2024-04-29 12:31:59.139 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:31:59.144 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.5156ms
+2024-04-29 12:31:59.313 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:31:59.320 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.0326ms
+2024-04-29 12:32:03.456 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - -
+2024-04-29 12:32:03.460 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 12:32:03.461 +07:00 [INF] Route matched with {action = "ExportExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportExcel() on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-29 12:32:03.468 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-04-29 12:32:03.468 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI) in 7.8632ms
+2024-04-29 12:32:03.469 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 12:32:03.469 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - - - 404 - application/problem+json;+charset=utf-8 12.8136ms
+2024-04-29 12:32:30.615 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:32:30.619 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 3.6635ms
+2024-04-29 12:32:30.632 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:32:30.632 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:32:30.633 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.3073ms
+2024-04-29 12:32:30.635 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 2.4478ms
+2024-04-29 12:32:30.711 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:32:30.716 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.7073ms
+2024-04-29 12:32:40.396 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 12:32:40.714 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-29 12:32:40.716 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-29 12:32:40.721 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 12:32:40.724 +07:00 [INF] Hosting environment: Development
+2024-04-29 12:32:40.725 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-29 12:32:41.483 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:32:41.800 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:32:41.800 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 319.2431ms
+2024-04-29 12:32:41.813 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:32:41.814 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 13.9947ms
+2024-04-29 12:32:41.840 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.7747ms
+2024-04-29 12:32:42.283 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:32:42.387 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.8830ms
+2024-04-29 12:32:46.216 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - -
+2024-04-29 12:32:46.273 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 12:32:46.285 +07:00 [INF] Route matched with {action = "ExportExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportExcel() on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-29 12:32:46.683 +07:00 [INF] Executing action method LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI) - Validation state: "Valid"
+2024-04-29 12:35:44.036 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 12:35:44.180 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-29 12:35:44.183 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-29 12:35:44.186 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 12:35:44.188 +07:00 [INF] Hosting environment: Development
+2024-04-29 12:35:44.189 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-29 12:35:44.803 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:35:45.184 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 383.1202ms
+2024-04-29 12:35:45.192 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:35:45.195 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:35:45.205 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 6.0012ms
+2024-04-29 12:35:45.217 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.0987ms
+2024-04-29 12:35:45.350 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:35:45.453 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.0854ms
+2024-04-29 12:35:52.735 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - -
+2024-04-29 12:35:52.802 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 12:35:52.822 +07:00 [INF] Route matched with {action = "ExportExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportExcel() on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-29 12:35:53.196 +07:00 [INF] Executing action method LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI) - Validation state: "Valid"
+2024-04-29 12:36:03.999 +07:00 [INF] Executed action method LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 10798.0386ms.
+2024-04-29 12:36:04.005 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-04-29 12:36:04.013 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI) in 11187.5635ms
+2024-04-29 12:36:04.013 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 12:36:04.015 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - - - 404 - application/problem+json;+charset=utf-8 11279.7965ms
+2024-04-29 12:38:59.522 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 12:38:59.703 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-29 12:38:59.705 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-29 12:38:59.708 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 12:38:59.710 +07:00 [INF] Hosting environment: Development
+2024-04-29 12:38:59.711 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-29 12:39:00.540 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:39:00.772 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 235.7524ms
+2024-04-29 12:39:00.781 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:39:00.782 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:39:00.809 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 27.7595ms
+2024-04-29 12:39:00.816 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.9324ms
+2024-04-29 12:39:00.960 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:39:01.107 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 147.3936ms
+2024-04-29 12:39:04.716 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - -
+2024-04-29 12:39:04.779 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 12:39:04.793 +07:00 [INF] Route matched with {action = "ExportExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportExcel() on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-29 12:39:05.126 +07:00 [INF] Executing action method LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI) - Validation state: "Valid"
+2024-04-29 12:39:50.469 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 12:39:50.568 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-29 12:39:50.568 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-29 12:39:50.569 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 12:39:50.570 +07:00 [INF] Hosting environment: Development
+2024-04-29 12:39:50.570 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-29 12:39:51.224 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:39:51.352 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 128.7442ms
+2024-04-29 12:39:51.359 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:39:51.361 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:39:51.364 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 4.4943ms
+2024-04-29 12:39:51.374 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.7262ms
+2024-04-29 12:39:51.519 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:39:51.601 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.3962ms
+2024-04-29 12:39:55.567 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - -
+2024-04-29 12:39:55.587 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 12:39:55.596 +07:00 [INF] Route matched with {action = "ExportExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportExcel() on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-29 12:39:56.376 +07:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-29 12:39:57.089 +07:00 [INF] Executing FileContentResult, sending file with download name 'Customer.xlsx' ...
+2024-04-29 12:39:57.098 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI) in 1499.368ms
+2024-04-29 12:39:57.098 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 12:39:57.105 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - - - 200 7155 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1537.9831ms
+2024-04-29 12:48:26.379 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 12:48:26.474 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-29 12:48:26.474 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-29 12:48:26.475 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 12:48:26.476 +07:00 [INF] Hosting environment: Development
+2024-04-29 12:48:26.476 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-29 12:48:26.918 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:48:27.152 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 234.1038ms
+2024-04-29 12:48:27.162 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:48:27.162 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:48:27.166 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 3.2003ms
+2024-04-29 12:48:27.174 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.1211ms
+2024-04-29 12:48:27.252 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:48:27.350 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.2784ms
+2024-04-29 12:48:32.120 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/minimalapi - -
+2024-04-29 12:48:32.148 +07:00 [INF] Executing endpoint 'HTTP: GET /minimalapi'
+2024-04-29 12:48:32.148 +07:00 [INF] Executed endpoint 'HTTP: GET /minimalapi'
+2024-04-29 12:48:32.149 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/minimalapi - - - 200 - text/plain;+charset=utf-8 28.1903ms
+2024-04-29 12:49:39.765 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 12:49:39.858 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-29 12:49:39.858 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-29 12:49:39.861 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 12:49:39.861 +07:00 [INF] Hosting environment: Development
+2024-04-29 12:49:39.861 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-29 12:49:40.439 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:49:40.586 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 147.9915ms
+2024-04-29 12:49:40.593 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:49:40.593 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:49:40.600 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 6.8736ms
+2024-04-29 12:49:40.604 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.7873ms
+2024-04-29 12:49:40.709 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:49:40.813 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.2169ms
+2024-04-29 12:50:01.040 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/getchannel?channelname=Cong%20Lam - -
+2024-04-29 12:50:01.057 +07:00 [INF] Executing endpoint 'HTTP: GET /getchannel'
+2024-04-29 12:50:01.072 +07:00 [INF] Executed endpoint 'HTTP: GET /getchannel'
+2024-04-29 12:50:01.072 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/getchannel?channelname=Cong%20Lam - - - 200 - text/plain;+charset=utf-8 32.2693ms
+2024-04-29 12:53:23.934 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 12:53:24.038 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-29 12:53:24.038 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-29 12:53:24.041 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 12:53:24.041 +07:00 [INF] Hosting environment: Development
+2024-04-29 12:53:24.041 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-29 12:53:24.530 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:53:24.688 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 158.6141ms
+2024-04-29 12:53:24.695 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:53:24.695 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:53:24.698 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 2.7591ms
+2024-04-29 12:53:24.702 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.3647ms
+2024-04-29 12:53:24.905 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:53:24.996 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.6257ms
+2024-04-29 12:56:55.816 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 12:56:55.931 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-29 12:56:55.932 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-29 12:56:55.935 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 12:56:55.936 +07:00 [INF] Hosting environment: Development
+2024-04-29 12:56:55.936 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-29 12:56:56.175 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 12:56:56.374 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 200.3262ms
+2024-04-29 12:56:56.381 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 12:56:56.381 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 12:56:56.385 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 3.2405ms
+2024-04-29 12:56:56.390 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.0152ms
+2024-04-29 12:56:56.589 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 12:56:56.670 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 81.1252ms
+2024-04-29 12:56:59.886 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/getcustomer - -
+2024-04-29 12:56:59.915 +07:00 [INF] Executing endpoint 'HTTP: GET /getcustomer'
+2024-04-29 12:57:00.708 +07:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-29 12:57:00.774 +07:00 [INF] Executed endpoint 'HTTP: GET /getcustomer'
+2024-04-29 12:57:00.779 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/getcustomer - - - 200 - application/json;+charset=utf-8 893.0303ms
+2024-04-29 13:02:35.340 +07:00 [INF] User profile is available. Using 'C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 13:02:35.429 +07:00 [INF] Now listening on: https://localhost:7222
+2024-04-29 13:02:35.430 +07:00 [INF] Now listening on: http://localhost:5057
+2024-04-29 13:02:35.431 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 13:02:35.431 +07:00 [INF] Hosting environment: Development
+2024-04-29 13:02:35.431 +07:00 [INF] Content root path: C:\Users\ACER\Desktop\CODE\SELF_LEARNING\ASP.NET_CORE\API\LearnAPI\LearnAPI
+2024-04-29 13:02:35.907 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - -
+2024-04-29 13:02:36.083 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - - - 200 - text/html;charset=utf-8 177.5981ms
+2024-04-29 13:02:36.091 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - -
+2024-04-29 13:02:36.091 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - -
+2024-04-29 13:02:36.097 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 5.5910ms
+2024-04-29 13:02:36.104 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.4901ms
+2024-04-29 13:02:36.322 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - -
+2024-04-29 13:02:36.410 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.6257ms
+2024-04-29 13:05:39.546 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7222/createcustomer application/json 150
+2024-04-29 13:05:39.549 +07:00 [INF] CORS policy execution successful.
+2024-04-29 13:05:39.564 +07:00 [INF] Executing endpoint 'HTTP: POST /createcustomer'
+2024-04-29 13:05:40.211 +07:00 [INF] Executed DbCommand (63ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 50) (DbType = AnsiString), @p3='?' (DbType = Boolean), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_customer] ([Code], [Creditlimit], [Email], [IsActive], [Name], [Phone], [Taxcode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2024-04-29 13:05:40.233 +07:00 [INF] Executed endpoint 'HTTP: POST /createcustomer'
+2024-04-29 13:05:40.240 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7222/createcustomer application/json 150 - 200 0 - 694.3175ms
+2024-04-29 13:05:45.412 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - -
+2024-04-29 13:05:45.424 +07:00 [INF] Executing endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 13:05:45.436 +07:00 [INF] Route matched with {action = "ExportExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportExcel() on controller LearnAPI.Controllers.CustomerController (LearnAPI).
+2024-04-29 13:05:45.679 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-29 13:05:46.449 +07:00 [INF] Executing FileContentResult, sending file with download name 'Customer.xlsx' ...
+2024-04-29 13:05:46.457 +07:00 [INF] Executed action LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI) in 1017.9278ms
+2024-04-29 13:05:46.457 +07:00 [INF] Executed endpoint 'LearnAPI.Controllers.CustomerController.ExportExcel (LearnAPI)'
+2024-04-29 13:05:46.458 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/Customer/ExportExcel - - - 200 7195 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1045.6022ms
+2024-04-29 13:06:45.499 +07:00 [INF] Request starting HTTP/2 PUT https://localhost:7222/updatecustomer/005 application/json 158
+2024-04-29 13:06:45.501 +07:00 [INF] CORS policy execution successful.
+2024-04-29 13:06:45.502 +07:00 [INF] Executing endpoint 'HTTP: PUT /updatecustomer/{code}'
+2024-04-29 13:06:45.586 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+WHERE [t].[Code] = @__p_0
+2024-04-29 13:06:45.598 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[@p2='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_customer] SET [Email] = @p0, [Name] = @p1
+OUTPUT 1
+WHERE [Code] = @p2;
+2024-04-29 13:06:45.601 +07:00 [INF] Executed endpoint 'HTTP: PUT /updatecustomer/{code}'
+2024-04-29 13:06:45.601 +07:00 [INF] Request finished HTTP/2 PUT https://localhost:7222/updatecustomer/005 application/json 158 - 200 0 - 102.1470ms
+2024-04-29 13:06:52.574 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/getcustomer - -
+2024-04-29 13:06:52.574 +07:00 [INF] Executing endpoint 'HTTP: GET /getcustomer'
+2024-04-29 13:06:52.585 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-29 13:06:52.591 +07:00 [INF] Executed endpoint 'HTTP: GET /getcustomer'
+2024-04-29 13:06:52.591 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/getcustomer - - - 200 - application/json;+charset=utf-8 17.1664ms
+2024-04-29 13:07:07.858 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7222/getcustomerbycode/005 - -
+2024-04-29 13:07:07.859 +07:00 [INF] Executing endpoint 'HTTP: GET /getcustomerbycode/{code}'
+2024-04-29 13:07:07.866 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+WHERE [t].[Code] = @__p_0
+2024-04-29 13:07:07.868 +07:00 [INF] Executed endpoint 'HTTP: GET /getcustomerbycode/{code}'
+2024-04-29 13:07:07.868 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7222/getcustomerbycode/005 - - - 200 - application/json;+charset=utf-8 9.5122ms
